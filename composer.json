@@ -1,0 +1,16 @@
+{
+    "name": "bindadmin/bindadmin",
+    "description": "Modern BIND9 Admin GUI similar to PowerDNS-Admin",
+    "type": "project",
+    "require": {
+        "php": ">=8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        },
+        "files": [
+            "app/Helpers/functions.php"
+        ]
+    }
+}
