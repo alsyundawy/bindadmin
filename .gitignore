@@ -1,0 +1,38 @@
+# Environment & secrets
+.env
+.env.local
+.env.*.local
+
+# Database
+database/*.sqlite
+database/*.sqlite-journal
+database/*.sqlite-wal
+database/*.sqlite-shm
+
+# Storage runtime
+storage/zones/*
+storage/backups/*
+storage/logs/*
+storage/cache/*
+!storage/zones/.gitkeep
+!storage/backups/.gitkeep
+!storage/logs/.gitkeep
+!storage/cache/.gitkeep
+
+# Composer
+/vendor/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Debug / coverage
+.phpunit.result.cache
+coverage/
+.phpstan.cache
+psalm-cache/
