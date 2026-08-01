@@ -2,6 +2,17 @@
 
 All notable changes to BindAdmin are documented in this file.
 
+## [1.0.2] - 2026-08-02
+
+### Fixed
+- Added missing `: void` return types on Dashboard, Log, Setting controllers
+- Setting model: safer JSON encoding with `JSON_THROW_ON_ERROR`
+- Template model: null-safe type checks
+
+### Documentation
+- Professional README with full install and deploy guide
+- DOCNOTE expanded with security checklist
+
 ## [1.0.1] - 2026-08-02
 
 ### Security
@@ -21,9 +32,8 @@ All notable changes to BindAdmin are documented in this file.
 
 ### Fixed
 - `migrate()` only runs schema on first install (empty DB)
-- Missing `declare(strict_types=1)` across PHP files
+- Missing `declare(strict_types=1)` across PHP application classes
 - Return types added to controller methods
-- `flash()` setter/getter behavior clarified
 - User model no longer selects password hash in `all()` listing
 - Self-delete and primary-admin protection improved
 - File writes use `LOCK_EX`
@@ -34,10 +44,6 @@ All notable changes to BindAdmin are documented in this file.
 - PDO WAL mode enabled for SQLite
 - Activity log IP validation
 - Bound integer parameters for LIMIT queries
-
-### Documentation
-- Added CHANGELOG.md and DOCNOTE.md
-- Updated README security notes
 
 ## [1.0.0] - 2026-08-02
 
